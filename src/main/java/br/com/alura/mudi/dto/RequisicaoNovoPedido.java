@@ -1,11 +1,18 @@
 package br.com.alura.mudi.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import br.com.alura.mudi.model.Pedido;
 
 public class RequisicaoNovoPedido {
 
+	@NotBlank //NotBlank.requisicaoNovoPedido.nomeProduto=não pode estar em branco
 	private String nomeProduto;
+	
+	@NotBlank
 	private String urlProduto;
+	
+	@NotBlank
 	private String urlImagem;
 	private String descricao;
 	
