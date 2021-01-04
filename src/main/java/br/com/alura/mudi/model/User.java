@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 public class User {
-	
+
 	@Id
 	private String username;
 	private String password;

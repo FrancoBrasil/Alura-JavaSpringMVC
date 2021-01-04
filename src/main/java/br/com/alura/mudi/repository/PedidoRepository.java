@@ -14,7 +14,8 @@ import br.com.alura.mudi.model.StatusPedido;
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
 	List<Pedido> findByStatus(StatusPedido status);
-	
+
 	@Query("select p from Pedido p join p.user u where u.username = :username")
-	List<Pedido> findAllByUsuario(@Param("username") String username);
+	List<Pedido> findAllByUsuario(@Param("username")String username);
+
 }
