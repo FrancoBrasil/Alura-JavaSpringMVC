@@ -11,6 +11,5 @@ import br.com.alura.mudi.model.StatusPedido;
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
-	List<Pedido> findByStatus(StatusPedido aguardando);
-	
+	List<Pedido> findByStatus(StatusPedido status);
 }

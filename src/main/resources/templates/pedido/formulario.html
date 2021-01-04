@@ -19,7 +19,7 @@
 					<div class="form-group">
 						<label for="urlProduto">Url</label>
 						<input th:field="*{urlProduto}" th:errorClass="is-invalid" class="form-control" placeholder="url do produto"/>
-						<small>Procure em um site o produto que vocÃª deseja e cole a url da pÃ¡gina aqui.</small>
+						<small>Procure em um site o produto que você deseja e cole a url da página aqui.</small>
 						<div class="invalid-feedback" th:errors="*{urlProduto}">
 							Erros da url do produto
 						</div>
@@ -33,7 +33,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="descricao">DescriÃ§Ã£o</label>
+						<label for="descricao">Descrição</label>
 						<textarea th:field="*{descricao}" class="form-control" placeholder="Adicione detalhes importantes para ajudar o comprador."></textarea>
 					</div>
 					<button class="btn btn-primary" type="submit">Cadastrar</button>
